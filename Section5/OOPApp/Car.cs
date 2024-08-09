@@ -5,14 +5,14 @@ internal class Car
 	private string _model = "";
 	private string _brand = "";
 
-	public string Model { get; set; }
-	public string Brand { get; set; }
+	public string Model { get => _model; set => _model = value; }
+	public string Brand { get => _brand; set => _brand = value; }
 
 	public Car(string model, string brand)
 	{
-		_model = model;
-		_brand = brand;
+		Model = model;
+		Brand = brand;
 
-		Console.WriteLine($"An {_brand} of the model {_model} has been created!");
+		Console.WriteLine($"An {Brand} of the model {Model} has been created!");
 	}
 }
